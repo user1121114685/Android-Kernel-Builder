@@ -95,10 +95,10 @@ jobs:
 
           echo "ARCH=$ARCH" >> $GITHUB_ENV
 
-          args="-j$(nproc --all)"
+          args="-j16"
           if [ -n "${{ env.OUT_DIR }}" ]; then
             mkdir -p $(pwd)/${{ env.OUT_DIR }}
-            args="$args O=$(pwd)/${{ env.OUT_DIR }}"
+            args="$args o=$(pwd)/${{ env.OUT_DIR }}"
           fi
           if [ -n "$ARCH" ]; then
             args="$args ARCH=$ARCH"
