@@ -2,11 +2,11 @@
   {
     "kernelSource": {
       "name": "DogDay-Normal",
-      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
-      "branch": "ares-r-oss",
-      "device": "ares_user"
+      "repo": "https://github.com/Tkpointz/android_kernel_aresin",
+      "branch": "lxr",
+      "device": "aresin"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
